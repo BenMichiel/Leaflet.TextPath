@@ -1,6 +1,6 @@
 {
     "name": "leaflet-textpath",
-    "version": "1.2.1",
+    "version": "1.0.0",
     "description": "Shows a text (or a pattern) along a Polyline",
     "keywords": [
         "Leaflet",
@@ -9,11 +9,11 @@
     ],
     "main": "leaflet.textpath.js",
     "bugs": {
-        "url": "https://github.com/makinacorpus/Leaflet.TextPath/issues"
+        "url": "https://github.com/BenMichiel/Leaflet.TextPath/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/makinacorpus/Leaflet.TextPath.git"
+        "url": "git://github.com/BenMichiel/Leaflet.TextPath.git"
     },
     "license": "MIT",
     "scripts": {
