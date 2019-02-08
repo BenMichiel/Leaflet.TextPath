@@ -3,61 +3,17 @@ Leaflet.TextPath
 
 Shows a text along a Polyline.
 
-Check out the [demo](http://makinacorpus.github.com/Leaflet.TextPath/) !
+This is a fork of https://github.com/makinacorpus/Leaflet.TextPath
 
 Leaflet versions
 -----
 
 The version on the `gh-pages` branch targets Leaflet `1.3.1`.
 
-Usage
------
-
-For example, show path orientation on mouse over :
-
-```javascript
-    var layer = L.polyLine(...);
-
-    layer.on('mouseover', function () {
-        this.setText('  ►  ', {repeat: true, attributes: {fill: 'red'}});
-    });
-
-    layer.on('mouseout', function () {
-        this.setText(null);
-    });
-```
-
-With a GeoJSON containing lines, it becomes:
-
-```javascript
-    L.geoJson(data, {
-        onEachFeature: function (feature, layer) {
-            layer.setText(feature.properties.label);
-        }
-    }).addTo(map);
-
-```
-
-### Options
-
-* `repeat` Specifies if the text should be repeated along the polyline (Default: `false`)
-* `center` Centers the text according to the polyline's bounding box  (Default: `false`)
-* `below` Show text below the path (Default: false)
-* `offset` Set an offset to position text relative to the polyline (Default: 0)
-* `orientation` Rotate text.  (Default: 0)
-    - {orientation: angle} - rotate to a specified angle (e.g. {orientation: 15})
-    - {orientation: flip} - filps the text 180deg correction for upside down text placement on west -> east lines
-    - {orientation: perpendicular} - places text at right angles to the line.
-
-* `attributes` Object containing the attributes applied to the `text` tag. Check valid attributes [here](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text#Attributes) (Default: `{}`)
-
-Screenshot
-----------
-
-![screenshot](https://raw.github.com/makinacorpus/Leaflet.TextPath/gh-pages/screenshot.png)
-
 Credits
 -------
+
+https://github.com/makinacorpus/Leaflet.TextPath
 
 The main idea comes from Tom Mac Wright's *[Getting serious about SVG](http://mapbox.com/osmdev/2012/11/20/getting-serious-about-svg/)*
 
@@ -65,9 +21,14 @@ The main idea comes from Tom Mac Wright's *[Getting serious about SVG](http://ma
 Changelog
 ---------
 
-### development ###
+### 1.2.2 ###
 
-* Nothing changed yet.
+* Now also works on other pane than overlay-pane.
+* First change on https://github.com/BenMichiel/Leaflet.TextPath
+
+### 1.2.1 ###
+
+Latest change on https://github.com/makinacorpus/Leaflet.TextPath
 
 ### 1.1.0 ###
 
