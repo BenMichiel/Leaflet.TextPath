@@ -21,6 +21,10 @@ The main idea comes from Tom Mac Wright's *[Getting serious about SVG](http://ma
 Changelog
 ---------
 
+### 1.2.3 ###
+
+* Now also works on FireFox with Angular and changing base url.
+
 ### 1.2.2 ###
 
 * Now also works on other pane than overlay-pane.
