@@ -98,7 +98,7 @@ var PolylineTextPath = {
 
         var dy = options.offset || this._path.getAttribute('stroke-width');
 
-        textPath.setAttribute("href", `${window.location.href.split('#')[0]}#${id}`);
+        textPath.setAttribute("href", window.location.href.split('#')[0] + '#' + id);
         textNode.setAttribute('dy', dy);
         for (var attr in options.attributes)
             textNode.setAttribute(attr, options.attributes[attr]);

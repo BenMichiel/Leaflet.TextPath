@@ -21,6 +21,10 @@ The main idea comes from Tom Mac Wright's *[Getting serious about SVG](http://ma
 Changelog
 ---------
 
+### 1.2.4 ###
+
+* Now also works in IE.
+
 ### 1.2.3 ###
 
 * Now also works on FireFox with Angular and changing base url.
